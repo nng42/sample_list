@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("tenimyu_data.csv")
+
+data_s = df[df["身長"] <= 160]
+print("身長が160cm以下\n",data_s)
