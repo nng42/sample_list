@@ -1,0 +1,9 @@
+import pandas as pd
+
+df = pd.read_csv("tenimyu_data.csv")
+
+print("最高身長",df["身長"].max())
+print("最低身長",df["身長"].min())
+print("平均身長",df["身長"].mean())
+print("身長の中央値",df["身長"].median())
+print("身長の合計",df["身長"].sum())
